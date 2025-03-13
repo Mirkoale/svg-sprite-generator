@@ -1,0 +1,16 @@
+{
+  "name": "svg-sprite-gen",
+  "version": "1.0.0",
+  "description": "genera sprite di svg èer css",
+  "main": "main.js",
+  "scripts": {
+    "build": "node loop.js && node svg-to-json.js",
+    "postbuild": "",
+    "generate": ""
+  },
+  "author": "HRVG design team",
+  "license": "ISC",
+  "dependencies": {
+    "svgson": "^5.3.1"
+  }
+}

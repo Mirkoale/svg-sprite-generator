@@ -1,0 +1,39 @@
+p {
+    color: red;
+}
+
+form {
+    margin-block: 24px;
+}
+.icon {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 22px;
+    height: 22px ;
+}
+
+.icon::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    width: 22px;
+    height: 22px ;
+    mask-image: var(--link);
+    mask-size: contain;
+}
+
+/* .hrvg-icon-bank::before {
+	mask-image: url("./nuovo-sprite.svg#bank");
+}
+
+.hrvg-icon-bike::before {
+	mask-image: url("./svg-def.svg#bike");
+} */
+#icon-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
